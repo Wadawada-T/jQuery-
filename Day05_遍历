@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.0.js"></script>
+<script>
+    $(function(){
+        //无参遍历
+       /* $("ul li").each(function () {
+            alert($(this).text())
+        })*/
+
+       //有参遍历
+       /* $("ul li").each(function (index) {
+            alert($(this).eq(index).text())
+        })*/
+
+        //两个参数遍历
+       /* $("ul li").each(function (index,e) {
+            alert(e.innerText)
+        })*/
+
+       $.each($("li"),function () {
+           alert($(this).text())
+       })
+        //有参同上
+
+
+    })
+</script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>
