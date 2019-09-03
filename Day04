@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.4.0.js"></script><!--导入jQuery文件-->
+    <script>
+        $(function () {//文档就绪
+
+            $("#sp1").css("background","red")//id选择器选择 id=sp1 ，设置行内标签span的颜色是红色
+
+    })
+    </script>
+</head>
+<body>
+<div id="box">
+    <span id="sp1">111</span>
+    <span id="sp2">222</span>
+</div>
+
+</body>
+</html>
