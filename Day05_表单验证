@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       form{
+            border:1px solid greenyellow;
+            width: 1000px;
+            height: 600px;
+            margin:auto;
+        }
+        label{
+            width: 300px;
+            height: 50px;
+            display: inline-block;
+            text-align: right;
+            color: bisque;
+        }
+    </style>
+
+    <!--jQuery的核心js文件-->
+    <script src="js/jquery-3.4.0.js"></script>
+
+    <!--表单校验插件的核心js（必须在他引入之前引入jQuery的核心文件）-->
+    <script src="js/jquery.validate.js"></script>
+
+   <!-- 汉化包-->
+    <script src="js/messages_zh.js"></script>
+
+    <script>
+        $(function () {
+            $("form").validate({
+                rules:{
+                    username:{
+                        maxlength:5,
+                        minlength:2
+                    },
+                    repwd:{
+                        equalTo:"#pwd"
+                    }
+                },
+                messages:{
+                    username:{
+                        maxlength:"多了",
+                        minlength:"少了"
+                    },
+                    repwd:{
+                        equalTo:"两次密码输入不一致"
+                    }
+                }
+            });
+
+        })
+
+    </script>
+
+
+</head>
+<body>
+
+<form action="二级联动.html" method="get">
+    <label for="username">账号</label><input type="text" name="username" id="username"><br>
+    <label for="pwd">密码</label><input type="password" name="pwd" id="pwd"><br>
+    <label for="repwd">确认密码</label> <input type="password" name="repwd" id="repwd"><br>
+<input type="submit">
+</form>
+</body>
+</html>
