@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.0.js"></script>
+    <script>
+        $(function () {
+
+            //获取id=box1的本文内容
+           /* alert($("#box1").text())*/
+
+           //将文本内容修改
+          /* $("#box2").text("傻子")*/
+
+          //修改元素内容
+           // $("#box1").html("<span style='background: greenyellow'>这里的人都叫我索里亚</span>")
+            $("#box1").text("<span>123</span>");//错误示范
+        })
+    </script>
+
+</head>
+<body>
+<div id="box1">who do i love</div>
+<div id="box2">
+    <div id="in">i don`t no</div>
+</div>
+</body>
+</html>
