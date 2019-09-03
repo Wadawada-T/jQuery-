@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.4.0.js"></script>
+    <script>
+       /* $(function () {
+            //全选择器
+            console.log($("*")[0]);
+            console.log($("*")[1]);
+            console.log($("*")[2]);
+            console.log($("*")[3]);
+            console.log($("*")[4]);
+            console.log($("*")[5]);
+            console.log($("*")[6]);
+            console.log($("*")[7]);
+        }) */
+
+
+         /*   $(function () {
+                //ID选择器
+                console.log($("#box"));
+            })*/
+
+
+       /* $(function () {
+            //类选择器
+            console.log($(".cla"));
+        })*/
+
+      /* $(function(){
+           //tagName选择器
+           console.log($("div"));
+       })*/
+
+       $(function(){
+           //交集选择器，满足选择器1并且满足选择器2
+           console.log($("div.cla"));
+       })
+
+    </script>
+</head>
+<body>
+    <div id="box" class="cla"></div>
+</body>
+</html>
