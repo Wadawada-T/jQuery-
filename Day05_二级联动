@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.0.js"></script>
+    <script>
+        var arr=[["朝阳","海淀"],["浦东","外滩"],["1","2"]];
+        $(function () {
+
+            $("#box").change(function () {
+             var num = $("#box :checked").index();//获取城市的下标索引
+
+             if(num == 0){
+                 $("#box2").html("<option>----二级---</option>");//索引值是0，二级下拉框显示内容
+             }else{
+                 var arr1 = arr[num-1];//对应  arr数组下标索引
+                 var str = "<option>----二级---</option>";
+                 $.each(arr1,function () {//遍历数组
+                     str +="<option>"+this+"</option>"
+                 })
+                 $("#box2").html(str);//将str的值传给第二个下拉框
+             }
+            })
+        })
+    </script>
+</head>
+<body>
+<select name="select" id="box">
+    <option value="0">----城市---</option>
+    <option value="bj">北京</option>
+    <option value="sh">上海</option>
+    <option value="tj">天津</option>
+</select>
+<select name="second" id="box2">
+    <option value="">----二级---</option>
+</select>
+</body>
+</html>
