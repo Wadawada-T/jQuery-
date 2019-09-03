@@ -1,0 +1,9 @@
+jQuery对象转DOM对象
+
+$("#box")[0].innerText
+或
+$("#box")get(0).innerText
+
+DOM对象转jQuery对象
+var domObj = dociment.getElementById("box");
+$(domObj).text();
