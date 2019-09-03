@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.0.js"></script>
+    <script>
+       $(function () {
+         //  $("ul").append("<li>111</li>")//在ul中添加111，后面添加
+          // $("ul").prepend("<li>666</li>")//在ul中添加666，前面添加
+
+          // $("<li>666</li>").appendTo("ul")//在ul中添加666，后面添加
+           //$("<li>666</li>").prependTo("ul")//在ul中添加666，前面添加
+
+          // $("p").appendTo("ul")
+
+           $("p").clone().appendTo("ul")//克隆，不删除分割线下面的元素
+
+       })
+
+
+    </script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<hr>
+<p>555</p>
+</body>
+</html>
