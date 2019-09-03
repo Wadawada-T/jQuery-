@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.4.0.js"></script>
+    <script>
+        $(function () {
+            $("[type=button]:first").click(function () {
+                $("#box1 option:checked").appendTo("#sel2")
+            })
+
+            $("[type=button]:last").click(function () {
+                $("#box1 option").appendTo("#sel2")
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+
+<select name="city" id="box1" size="3" style="width: 200px;height: 350px" multiple>
+    <option value="bj">北京</option>
+    <option value="tj">天津</option>
+    <option value="sh">上海</option>
+
+
+</select>
+
+<input type="button" value="添加">
+<input type="button" value="全部添加">
+<select  id="sel2" size="3" style="width: 200px;height: 350px">
+</select>
+
+</body>
+</html>
