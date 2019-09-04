@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .content{
+            background: #f0f;
+        }
+    </style>
+    <script src="../jQuery/jquery-3.4.0.js"></script>
+
+    <script>
+        $(function () {
+            //$("tr:even").css("background","rgb(111,111,111)");//偶数行变色
+            //$("tr:odd").css("background","rgb(123,222,123)")//奇数行变色
+           // $("tr:first").css("background","rgb(255,0,0)")//第一行变色
+
+            //addclass() 添加class属性
+         /*   $("tr:first").addClass("fir");//给第一个tr class=fir
+            $(".fir").css("background","green");*/
+
+         //removeClass()删除某一个值
+            $("tr").mouseenter(function () {
+              //  $("tr").removeClass("content");
+                $(this).toggleClass("content");
+            }).mouseleave(function () {
+
+                //toggleClaa() 有此样式就移除，没有就执行添加操作
+
+                $(this).toggleClass("content");
+                $("tr").removeClass("content");
+            })
+        })
+
+
+    </script>
+</head>
+<body>
+<table border="1" style="text-align: center;height: 500px;width: 500px;border-collapse: collapse;">
+    <tr>
+
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>班级</th>
+    </tr>
+    <tr>
+
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td>java0715</td>
+    </tr>
+    <tr>
+
+        <td>李四</td>
+        <td>女</td>
+        <td>22</td>
+        <td>java1111</td>
+    </tr>
+    <tr>
+
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td>java0715</td>
+    </tr>
+    <tr>
+
+        <td>李四</td>
+        <td>女</td>
+        <td>22</td>
+        <td>java1111</td>
+    </tr>
+    <tr>
+
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td>java0715</td>
+    </tr>
+    <tr>
+
+        <td>李四</td>
+        <td>女</td>
+        <td>22</td>
+        <td>java1111</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
