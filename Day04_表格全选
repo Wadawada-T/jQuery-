@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jQuery/jquery-3.4.0.js"></script>
+
+    <script>
+        $(function () {
+            $("th:first").click(function () {//点击事件
+              //  $("[type=button]").prop("checked","this.checked");
+                $("[type=checkbox]").prop("checked",$("[type=checkbox]").prop("checked",$("[type=checkbox]").prop("checked")));
+
+            })
+
+        })
+
+
+    </script>
+</head>
+<body>
+<table border="1" style="text-align: center;height: 500px;width: 500px;border-collapse: collapse;">
+    <tr>
+        <th><input type="button" value="全选"></th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>班级</th>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td>java0715</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>李四</td>
+        <td>女</td>
+        <td>22</td>
+        <td>java1111</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td>java0715</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>李四</td>
+        <td>女</td>
+        <td>22</td>
+        <td>java1111</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>张三</td>
+        <td>男</td>
+        <td>20</td>
+        <td>java0715</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>李四</td>
+        <td>女</td>
+        <td>22</td>
+        <td>java1111</td>
+    </tr>
+
+</table>
+
+</body>
+</html>
